@@ -2,12 +2,13 @@ from tkinter import *
 
 
 def calculate():
-    input_kilo["text"] = float(input_mile.get()) * 1.609344
+    input_kilo["text"] = float(input_mile.get()) * 1.609
 
 
 window = Tk()
 window.title("Mile to Kilometer Converter")
 window.config(padx=25, pady=25)
+
 
 # ## First row
 input_mile = Entry(width=10)
@@ -32,6 +33,7 @@ label_equal.grid(row=1, column=2)
 # ## Third row
 button = Button(text="Calculate", command=calculate)
 button.grid(row=2, column=1)
+
 
 # The main loop
 window.mainloop()
